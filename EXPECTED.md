@@ -27,7 +27,7 @@ test. They start unlabeled.
 | `services/legacy-billing/Dockerfile` | Unlabeled | CRLF line endings kept |
 | `web/admin/Dockerfile` | Unlabeled | Labels added to the nginx stage |
 | `jobs/nightly-reports/Dockerfile` | Partially labeled (stale source) | Legacy `LABEL k v` value updated in place; `source_path` added |
-| `jobs/db-migrations/Dockerfile` | Incorrect label (source points at this template, not your copy) | Create allowed; the label PR corrects the source to your repo's URL |
+| `jobs/db-migrations/Dockerfile` | Incorrect label in copies (source points at this template); Labeled in the template itself | Create allowed; the label PR corrects the source to your repo's URL |
 | `jobs/data-export/Dockerfile` | Partially labeled | `source_path` added; in copies the stale source is also fixed |
 | `infra/nginx-gateway/Dockerfile` | Unlabeled or partial (`$SOURCE_URL` stored literally) | Variable label left alone |
 | `infra/base-images/python.Dockerfile` | Unlabeled | Labels added after `FROM` |
